@@ -1,0 +1,26 @@
+[
+    {
+        "pre": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "portability": {}
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+            "prompt": "Robert William Muench is a",
+            "target_new": "pope",
+            "ground_truth": "bishop",
+            "portability": {},
+            "locality": {},
+            "subject": "Robert William Muench"
+        },
+        "post": {
+            "rewrite_acc": [
+                0.0
+            ],
+            "locality": {},
+            "portability": {}
+        }
+    }
+]

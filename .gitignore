@@ -1,0 +1,60 @@
+# =============================================================================
+# seer-kg .gitignore
+# =============================================================================
+
+# --- Credentials --------------------------------------------------------------
+.env
+*.key
+*.pem
+
+# --- Model weights (large; download locally) ----------------------------------
+hugging_cache/
+
+# --- Pipeline outputs ---------------------------------------------------------
+results/
+
+# --- Logs ---------------------------------------------------------------------
+*.log
+
+# --- Model checkpoints / regenerable artifacts --------------------------------
+# Training checkpoints (e.g. MEND), IKE embedding caches, misc tensors.
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+*.pkl
+wandb/
+
+# --- Python -------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.coverage
+htmlcov/
+
+# --- Virtual environments -----------------------------------------------------
+.venv/
+venv/
+env/
+.conda/
+
+# --- Tooling / editors --------------------------------------------------------
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Large input datasets (optional) ------------------------------------------
+# The CounterFact files under data/ are large (counterfact.json ~44 MB). Uncomment
+# to keep them out of git and document how to obtain them in the README instead.
+# data/*.json

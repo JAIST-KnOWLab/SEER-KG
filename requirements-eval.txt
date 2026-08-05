@@ -1,0 +1,45 @@
+# Dependencies for the evaluation stage (evaluate.py).
+# The easyeditor library and hparams YAMLs are VENDORED (evaluate/easyeditor/ and
+# evaluate/hparams/) — no separate install. But the vendored library still needs the
+# Python packages below. Do NOT install EasyEdit's own requirements.txt: it is a full
+# machine `pip freeze` (unrelated system packages + local-path spaCy models).
+# Model weights are not vendored — set each hparams YAML's model_name.
+
+# Core model / editing stack
+torch>=2.1.0
+transformers>=4.43.0
+accelerate>=0.30.0
+bitsandbytes>=0.43.0        # 4-bit quantized model loading
+sentence-transformers>=2.2.0
+peft>=0.11.0
+safetensors>=0.4.0
+huggingface_hub>=0.23.0
+
+# Config / hparams loading (the omegaconf/hydra import you hit)
+omegaconf>=2.3.0
+hydra-core>=1.3.0
+PyYAML>=6.0
+
+# Editing-algorithm utilities
+einops>=0.7.0
+higher>=0.2.1              # MEND meta-learning
+datasets>=2.19.0
+nltk>=3.8
+regex>=2023.0.0
+
+# Numerics
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+scikit-learn>=1.3
+
+# Vision / multimodal (cv2 = opencv-python). Only needed for multimodal datasets /
+# editing; the vendored easyeditor guards these imports, so ROME/MEND/IKE/RAG on text
+# LLMs do not require it. Listed here so `pip install -r` covers it if you want it.
+opencv-python>=4.8            # cv2
+matplotlib>=3.7
+
+# --- Optional: other multimodal / unused-algorithm deps ------------------------
+# NOT needed for ROME/MEND/IKE/RAG (guarded imports).
+# timm  iopath  av  torchvision  fairscale  qwen-vl-utils
+# seaborn  openai  zhipuai  rouge  pytest  parameterized

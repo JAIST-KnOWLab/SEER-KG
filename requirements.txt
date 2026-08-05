@@ -1,0 +1,8 @@
+# Core dependencies for the probe stage (main.py probe).
+SPARQLWrapper>=2.0.0
+requests>=2.28.0
+tqdm>=4.65.0
+
+# The LLM chain/prompt stage (main.py chains) has separate, heavier deps:
+#   pip install -r requirements-llm.txt
+# The legacy modules (seer_kg/legacy/) additionally need: spacy + en_core_web_sm.

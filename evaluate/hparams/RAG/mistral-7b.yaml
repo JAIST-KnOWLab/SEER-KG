@@ -1,0 +1,24 @@
+alg_name: "RAG"
+model_name: "./hugging_cache/mistral-7b"
+retriever_model_name: "./hugging_cache/all-MiniLM-L6-v2"
+device: 0
+results_dir: "./results"
+
+# Retrieval parameters
+k: 5
+use_retrieved_examples: true
+max_retrieved_tokens: 512
+
+# Retrieval configuration
+retrieval_batch_size: 32
+embedding_cache_dir: "./cache/rag/embeddings"
+
+# Generation configuration
+max_gen_tokens: 100
+temperature: 0.7
+top_p: 0.9
+
+# Standard tokenization
+max_length: 40
+
+model_parallel: false
