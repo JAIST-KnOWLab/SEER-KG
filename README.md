@@ -130,7 +130,7 @@ The complete framework consists of four stages.
 | **Stage 1 – Probe** | Retrieve multi-hop knowledge surrounding edited facts from Wikidata. |
 | **Stage 2 – Finalize** | Merge resumable checkpoints into finalized datasets. |
 | **Stage 3 – Chain Generation** | Convert retrieved facts into reasoning chains and masked prompts. |
-| **Evaluation Stage – Evaluation** | Perform sequential knowledge editing and measure Generality, Portability, and Locality. |
+| **Evaluation Stage** | Perform sequential knowledge editing and measure Generality, Portability, and Locality. |
 
 ---
 
