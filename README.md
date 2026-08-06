@@ -1,8 +1,8 @@
-# SEER-KG
+# SEER-KG 🧙🏻
 
 > **SEER-KG: Side Effect Exploration and Evaluation with Knowledge Graph-based Retrieval in Knowledge Editing for Large Language Models**
 
-SEER-KG is a **knowledge graph-based retrieval framework** for exposing the hidden side effects of **Knowledge Editing (KE)** in Large Language Models (LLMs).
+![Alt Text](figs/fig01.png)
 
 Rather than evaluating only whether an edited fact is successfully updated, SEER-KG traces how a localized edit propagates through **multi-hop Wikidata neighborhoods**. The framework constructs reasoning chains, retrieves semantically related facts, and evaluates how knowledge edits affect both nearby and distant knowledge.
 
