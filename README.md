@@ -215,9 +215,9 @@ Supported methods
 
 Supported settings
 
-- One-Time
-- Early-Stop
-- Complete
+- ```one-time```: One-Time Edit Setting
+- ```chain-stop```: Early-Stop Edit Setting
+- ```chain-all```: Complete Edit Setting
 
 Example
 
