@@ -94,7 +94,7 @@ Knowledge Editing Dataset
            ▼
 ┌──────────────────────────┐
 │ Stage 1:                 │
-│ Knowledge Graph Retrieval │
+│ Knowledge Graph Retrieval│
 └──────────────────────────┘
            │
            ▼
