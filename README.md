@@ -93,25 +93,30 @@ Knowledge Editing Dataset
            │
            ▼
 ┌──────────────────────────┐
-│ Stage 1                  │
+│ Stage 1:                 │
 │ Knowledge Graph Retrieval │
 └──────────────────────────┘
            │
            ▼
 ┌──────────────────────────┐
-│ Stage 2                  │
+│ Stage 2:                 │
 │ Reasoning Chain Builder  │
 └──────────────────────────┘
            │
            ▼
 ┌──────────────────────────┐
-│ Stage 3                  │
+│ Stage 3:                 │
 │ Sequential Knowledge     │
 │ Editing Evaluation       │
 └──────────────────────────┘
            │
            ▼
-Generality • Portability • Locality
+┌──────────────────────────┐
+│ Evaluation Stage:        │
+│ • Generality             │
+│ • Portability            │
+| • Locality               |
+└──────────────────────────┘
 ```
 
 ---
@@ -125,7 +130,7 @@ The complete framework consists of four stages.
 | **Stage 1 – Probe** | Retrieve multi-hop knowledge surrounding edited facts from Wikidata. |
 | **Stage 2 – Finalize** | Merge resumable checkpoints into finalized datasets. |
 | **Stage 3 – Chain Generation** | Convert retrieved facts into reasoning chains and masked prompts. |
-| **Stage 4 – Evaluation** | Perform sequential knowledge editing and measure Generality, Portability, and Locality. |
+| **Evaluation Stage – Evaluation** | Perform sequential knowledge editing and measure Generality, Portability, and Locality. |
 
 ---
 
@@ -260,11 +265,13 @@ SEER-KG is designed for reproducible large-scale experiments.
 If you use SEER-KG in your research, please cite:
 
 ```bibtex
-@article{seerkg2026,
-  title={SEER-KG: Side Effect Exploration and Evaluation with Knowledge Graph-based Retrieval in Knowledge Editing for Large Language Models},
-  author={...},
-  journal={...},
-  year={2026}
+@inproceedings{seerkg,
+  author    = {Patipon Wiangnak and Natthawut Kertkeidkachorn and Kiyoaki Shirai},
+  title     = {SEER-KG: Side Effect Exploration and Evaluation with Knowledge Graph-based Retrieval in Knowledge Editing for LLMs},
+  booktitle = {},
+  year      = {},
+  pages     = {},
+  publisher = {}
 }
 ```
 
