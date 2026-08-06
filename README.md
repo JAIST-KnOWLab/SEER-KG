@@ -265,11 +265,11 @@ SEER-KG is designed for reproducible large-scale experiments.
 If you use SEER-KG in your research, please cite:
 
 ```bibtex
-@inproceedings{seerkg,
+@inproceedings{wiangnak2026seerkg,
   author    = {Patipon Wiangnak and Natthawut Kertkeidkachorn and Kiyoaki Shirai},
   title     = {SEER-KG: Side Effect Exploration and Evaluation with Knowledge Graph-based Retrieval in Knowledge Editing for LLMs},
   booktitle = {},
-  year      = {},
+  year      = {2026},
   pages     = {},
   publisher = {}
 }
