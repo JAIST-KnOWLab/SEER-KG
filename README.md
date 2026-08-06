@@ -206,14 +206,13 @@ Outputs include:
 
 Evaluate side effects using sequential editing.
 
-Supported methods
+Supported methods:
 
-- ROME
-- MEND
-- IKE
-- RAG
+- External Memorization-based: ```RAG``` and ```IKE```
+- Global Optimization-based: ```MEND```
+- Local Modification-based: ```ROME```
 
-Supported settings
+Supported settings:
 
 - ```one-time```: One-Time Edit Setting
 - ```chain-stop```: Early-Stop Edit Setting
